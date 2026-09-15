@@ -1,0 +1,86 @@
+╔══════════════════════════════════════════════════════════════╗
+║           قائمة التحقق من الأوامر — Commands Verify          ║
+╚══════════════════════════════════════════════════════════════╝
+
+  استخدم [✓] للنجاح، [✗] للفشل، [ ] لغير المُختبر.
+
+──── إدارة الوكلاء ────
+  [ ] agents                              عرض الأجهزة
+  [ ] count                               عدد الأجهزة
+  [ ] use 1                               تبديل لجهاز
+  [ ] current                             الجهاز الحالي
+  [ ] send 1 shell:id                     أمر لجهاز
+  [ ] broadcast shell:whoami              بث للكل
+  [ ] kill 1                              قطع اتصال
+
+──── أوامر محلية ────
+  [ ] help                                المساعدة
+  [ ] help ar                             عربي
+  [ ] help en                             إنجليزي
+  [ ] help files                          فئة ملفات
+  [ ] getinfo                             معلومات سريعة
+  [ ] save                                حفظ الجلسة
+  [ ] clear                               مسح الشاشة
+
+──── التنقل ────
+  [ ] pwd                                 المجلد الحالي
+  [ ] ls                                  محتويات
+  [ ] ls /sdcard                          محتويات /sdcard
+  [ ] cd /sdcard                          تغيير مجلد
+  [ ] cd ..                               المجلد الأب
+  [ ] cd ~                                HOME
+  [ ] cd -                                السابق
+  [ ] cat test.txt                        قراءة ملف
+  [ ] tree                                شجرة
+
+──── المعلومات ────
+  [ ] info                                معلومات JSON
+  [ ] rish_test                           اختبار Shizuku
+  [ ] shizuku                             حالة Shizuku
+
+──── Shell ────
+  [ ] shell:whoami                        المستخدم
+  [ ] shell:id                            الصلاحيات
+  [ ] shell:uname -a                      النواة
+  [ ] shell:ls -la /sdcard                ملفات
+  [ ] shell:ip a                          الشبكة
+  [ ] shell:ps aux                        العمليات
+  [ ] shell:cat ~/.bash_history           تاريخ الأوامر
+  [ ] shell:curl -L -o ~/test.txt <url>   تحميل ملف
+  [ ] shell:nmap -sn 192.168.8.0/24       مسح شبكة
+
+──── التطبيقات (Shizuku) ────
+  [ ] list_apps                           قائمة التطبيقات
+  [ ] install_url:<url>                   تثبيت من رابط
+  [ ] install_b64:<file>:<data>           تثبيت من base64
+  [ ] uninstall:<pkg>                     حذف تطبيق
+
+──── Termux:API ────
+  [ ] shell:termux-battery-status         البطارية
+  [ ] shell:termux-location               الموقع
+  [ ] shell:termux-camera-photo -c 0 <p>  الكاميرا
+  [ ] shell:termux-contact-list           جهات الاتصال
+  [ ] shell:termux-sms-list               الرسائل
+  [ ] shell:termux-clipboard-get          الحافظة
+  [ ] shell:termux-notification           إشعار
+  [ ] shell:termux-vibrate                اهتزاز
+  [ ] shell:termux-torch on               الفلاش
+
+──── الملفات ────
+  [ ] shell:base64 <file>                 تحويل base64
+  [ ] shell:tar czf <archive> <dir>       ضغط
+  [ ] shell:find <path> -name "*.jpg"     بحث
+  [ ] shell:echo "text" > <file>          كتابة ملف
+
+──── الأخطاء الشائعة ────
+  [ ] Padding is incorrect                → SECRET_KEY
+  [ ] no response or timeout              → أعد التشغيل
+  [ ] screencap: not found                → /system/bin/
+  [ ] Permission denied                   → termux-setup-storage
+  [ ] rish: command not found             → ثبّت rish
+  [ ] Shizuku not running                 → Start Shizuku
+
+═══════════════════════════════════════════════════════════════
+  إجمالي: 60+ أمر
+  نجحت: ____   فشلت: ____   لم تُختبر: ____
+═══════════════════════════════════════════════════════════════
